@@ -1,3 +1,4 @@
+import 'package:budget_tracker/ui/graph/graph.dart';
 import 'package:budget_tracker/ui/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -14,7 +15,7 @@ class _RootScreenState extends State<RootScreen> {
 
   static const List<Widget> _widgetOptions = <Widget>[
     Center(child: HomeScreen()),
-    Center(child: Text('Likes')),
+    Center(child: GraphScreen()),
     Center(child: Text('Search')),
     Center(child: Text('Profile')),
     Center(child: Text('Profile')),
@@ -31,10 +32,9 @@ class _RootScreenState extends State<RootScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: _widgetOptions[_selectedIndex],
       bottomNavigationBar: BottomAppBar(
-        color: Colors.white,
+        color: Theme.of(context).colorScheme.surface,
         elevation: 10,
         child: SafeArea(
           child: Padding(
@@ -60,10 +60,12 @@ class _RootScreenState extends State<RootScreen> {
                       children: [
                         SvgPicture.asset(
                           item.iconPath,
-                          height: 24,
-                          width: 24,
+                          height: 28,
+                          width: 28,
                           colorFilter: ColorFilter.mode(
-                            isSelected ? Colors.blue : Colors.grey,
+                            isSelected
+                                ? Theme.of(context).colorScheme.primary
+                                : Colors.grey,
                             BlendMode.srcIn,
                           ),
                         ),
