@@ -9,7 +9,10 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get app_name => 'Hoarding';
+  String get app_name => 'Samsun';
+
+  @override
+  String get exit => 'Exit';
 
   @override
   String get search_hoarding => 'Search Hoarding';
@@ -94,7 +97,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get version => 'Version';
-
-  @override
-  String get exit => 'Exit';
 }

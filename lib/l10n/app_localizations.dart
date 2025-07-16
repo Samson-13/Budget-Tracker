@@ -97,8 +97,14 @@ abstract class AppLocalizations {
   /// No description provided for @app_name.
   ///
   /// In en, this message translates to:
-  /// **'Hoarding'**
+  /// **'Samsun'**
   String get app_name;
+
+  /// No description provided for @exit.
+  ///
+  /// In en, this message translates to:
+  /// **'Exit'**
+  String get exit;
 
   /// No description provided for @search_hoarding.
   ///
@@ -267,12 +273,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Version'**
   String get version;
-
-  /// No description provided for @exit.
-  ///
-  /// In en, this message translates to:
-  /// **'Exit'**
-  String get exit;
 }
 
 class _AppLocalizationsDelegate
