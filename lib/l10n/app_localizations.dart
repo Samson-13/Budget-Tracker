@@ -148,6 +148,12 @@ abstract class AppLocalizations {
   /// **'Title'**
   String get title;
 
+  /// No description provided for @transactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Transactions'**
+  String get transactions;
+
   /// No description provided for @sign_out.
   ///
   /// In en, this message translates to:

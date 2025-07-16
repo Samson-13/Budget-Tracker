@@ -9,6 +9,7 @@
   "settings" : "Settings",
   "notification_settings" : "Notification Settings",
   "title": "Title",
+  "transactions" : "Transactions",
   "sign_out" : "Sign Out",
   "enter_hoarding_title": "Enter Hoarding Title",
   "enter_location": "Enter Location",

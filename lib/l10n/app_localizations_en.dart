@@ -36,6 +36,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get title => 'Title';
 
   @override
+  String get transactions => 'Transactions';
+
+  @override
   String get sign_out => 'Sign Out';
 
   @override
