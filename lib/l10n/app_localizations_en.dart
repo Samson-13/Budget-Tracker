@@ -27,7 +27,16 @@ class AppLocalizationsEn extends AppLocalizations {
   String get add_hoarding => 'Add Hoarding';
 
   @override
+  String get settings => 'Settings';
+
+  @override
+  String get notification_settings => 'Notification Settings';
+
+  @override
   String get title => 'Title';
+
+  @override
+  String get sign_out => 'Sign Out';
 
   @override
   String get enter_hoarding_title => 'Enter Hoarding Title';

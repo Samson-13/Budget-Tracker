@@ -130,11 +130,29 @@ abstract class AppLocalizations {
   /// **'Add Hoarding'**
   String get add_hoarding;
 
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @notification_settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Notification Settings'**
+  String get notification_settings;
+
   /// No description provided for @title.
   ///
   /// In en, this message translates to:
   /// **'Title'**
   String get title;
+
+  /// No description provided for @sign_out.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Out'**
+  String get sign_out;
 
   /// No description provided for @enter_hoarding_title.
   ///

@@ -1,5 +1,8 @@
+import 'package:budget_tracker/ui/category/category.dart';
 import 'package:budget_tracker/ui/graph/graph.dart';
 import 'package:budget_tracker/ui/home/home.dart';
+import 'package:budget_tracker/ui/settings/settings.dart';
+import 'package:budget_tracker/ui/transactions/transactions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -16,9 +19,9 @@ class _RootScreenState extends State<RootScreen> {
   static const List<Widget> _widgetOptions = <Widget>[
     Center(child: HomeScreen()),
     Center(child: GraphScreen()),
-    Center(child: Text('Search')),
-    Center(child: Text('Profile')),
-    Center(child: Text('Profile')),
+    Center(child: TransactionsScreen()),
+    Center(child: CategoryScreen()),
+    Center(child: SettingsScreen()),
   ];
 
   final List<_NavItem> _navItems = [
