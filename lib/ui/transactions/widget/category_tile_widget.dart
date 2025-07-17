@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget buildCategoryTile(Map<String, dynamic> item) {
+Widget buildTransactionTile(Map<String, dynamic> item) {
   return Container(
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(16),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'widget/category_tile_widget.dart';
-import 'widget/summary_card_tile.dart';
+import '../widget/summary_card_tile.dart';
 
 class TransactionsScreen extends ConsumerWidget {
   const TransactionsScreen({super.key});
@@ -137,14 +137,18 @@ class TransactionsScreen extends ConsumerWidget {
                           ),
                       itemBuilder: (context, index) {
                         final item = categories[index];
-                        return buildCategoryTile(item);
+                        return buildTransactionTile(item);
                       },
                     ),
                   ),
                 ),
               ],
             ),
-            AddButton(onPressed: () {}),
+            Positioned(
+              bottom: 24,
+              right: 28,
+              child: AddButton(onPressed: () {}),
+            ),
           ],
         ),
       ),

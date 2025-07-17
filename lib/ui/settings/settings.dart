@@ -1,6 +1,8 @@
 import 'package:budget_tracker/l10n/l10n.dart';
 import 'package:budget_tracker/ui/widget/custom_app_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -17,7 +19,10 @@ class SettingsScreen extends HookConsumerWidget {
       ),
       body: ListView(
         children: [
-          const SizedBox(height: 12),
+          const Gap(12),
+
+          Image.asset("assets/logo/app_logo.png", height: 200, width: 200),
+          const Gap(12),
 
           // Notification Settings
           _SettingsTile(
@@ -92,7 +97,7 @@ class SettingsScreen extends HookConsumerWidget {
             },
           ),
 
-          const SizedBox(height: 20),
+          const Gap(20),
         ],
       ),
     );
